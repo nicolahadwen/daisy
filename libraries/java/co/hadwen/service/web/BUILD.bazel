@@ -1,0 +1,13 @@
+package(default_visibility = ["//visibility:private"])
+
+java_library(
+   name = "web-service",
+   srcs = glob([
+       "**/*.java",
+   ]),
+   deps = [
+       "//:lombok",
+       "//libraries/java/co/hadwen/exception",
+       "@maven//:com_google_code_gson_gson",
+   ]
+)

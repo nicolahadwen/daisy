@@ -1,0 +1,12 @@
+package(default_visibility = ["//visibility:private"])
+
+java_library(
+   name = "translator",
+   srcs = glob([
+       "**/*.java",
+   ]),
+   deps = [
+       "//:lombok",
+       "//libraries/"
+   ]
+)

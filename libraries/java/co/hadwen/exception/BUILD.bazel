@@ -1,0 +1,13 @@
+package(default_visibility = ["//visibility:private"])
+
+java_library(
+   name = "exception",
+   visibility = ["//visibility:public"],
+   srcs = glob([
+       "**/*.java",
+   ]),
+   deps = [
+       "//:lombok",
+       "@maven//:com_google_code_gson_gson",
+   ]
+)
